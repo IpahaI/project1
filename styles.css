@@ -1,0 +1,261 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+header {
+	background: #007BFF;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin: 0 15px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s;
+}
+
+nav ul li a:hover {
+	color: #e0e0e0; /* Цвет текста при наведении */
+}
+
+main {
+	margin: 20px auto; /* Центрирование основного контента */
+	max-width: 800px; /* Ограничение ширины */
+}
+
+section {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	color: #333;
+	text-align: center; /* Выравнивание заголовка по центру */
+	margin-bottom: 15px; /* Отступ снизу */
+}
+
+
+
+
+#gallery {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h2 {
+	color: #333;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#gallery p {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #666;
+}
+
+.gallery-grid {
+	display: flex; /* Используем Flexbox */
+	flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+	gap: 15px; /* Промежуток между элементами */
+	justify-content: center; /* Центрируем элементы по горизонтали */
+}
+
+figure {
+	margin: 0; /* Убирает отступы у figure */
+	overflow: hidden; /* Скрывает части изображения, выходящие за границы */
+	border-radius: 8px; /* Закругляет углы */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляет тень */
+	transition: transform 0.3s; /* Плавный переход при наведении */
+	flex: 0 1 calc(25% - 15px); /* Задает ширину фигуры */
+	max-width: 250px; /* Максимальная ширина для фигуры */
+}
+
+figure:hover {
+	transform: scale(1.05); /* Увеличивает фигуру при наведении */
+}
+
+figure img {
+	width: 100%; /* Ширина 100% для адаптации к контейнеру */
+	height: 150px; /* Фиксированная высота для всех изображений */
+	object-fit: cover; /* Обрезает изображения, чтобы они соответствовали размеру */
+	border-radius: 8px 8px 0 0; /* Закругляет верхние углы изображения */
+}
+
+figcaption {
+	padding: 10px;
+	text-align: center; /* Центрирует текст в подписях */
+	background: #f9f9f9; /* Цвет фона для подписях */
+	border-radius: 0 0 8px 8px; /* Закругляет нижние углы */
+	color: #333;
+}
+
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background: #007BFF;
+	color: #fff;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+footer a {
+	color: #fff;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.read-more {
+	display: inline-block; /* Делает ссылку блочным элементом */
+	padding: 10px 20px; /* Отступы для кнопки */
+	margin-top: 10px; /* Отступ сверху */
+	background-color: #28a745; /* Цвет фона кнопки */
+	color: #fff; /* Цвет текста */
+	text-decoration: none; /* Убирает подчеркивание */
+	border-radius: 5px; /* Закругляет углы */
+	transition: background-color 0.3s, transform 0.3s; /* Плавный переход цвета фона и эффекта */
+	text-align: center; /* Центрирует текст в кнопке */
+}
+
+.read-more:hover {
+	background-color: #218838; /* Темный цвет фона при наведении */
+	transform: scale(1.05); /* Увеличивает кнопку при наведении */
+}
+
+#contact {
+	background: #f9f9f9; /* Светлый фон для блока */
+	padding: 20px; /* Отступы внутри блока */
+	margin-bottom: 20px; /* Отступ снизу */
+	border-radius: 8px; /* Закругленные углы */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+#contact h2 {
+	color: #333; /* Цвет заголовка */
+	text-align: center; /* Центрируем заголовок */
+	margin-bottom: 15px; /* Отступ снизу заголовка */
+}
+
+form {
+	display: flex; /* Используем Flexbox для формы */
+	flex-direction: column; /* Элементы формы располагаются вертикально */
+}
+
+label {
+	margin-bottom: 5px; /* Отступ снизу для меток */
+	color: #555; /* Цвет текста меток */
+}
+
+input, textarea {
+	padding: 10px; /* Отступы внутри полей ввода */
+	margin-bottom: 15px; /* Отступ снизу для полей ввода */
+	border: 1px solid #ccc; /* Рамка для полей ввода */
+	border-radius: 4px; /* Закругленные углы для полей ввода */
+	font-size: 16px; /* Размер шрифта */
+}
+
+input:focus, textarea:focus {
+	border-color: #007bff; /* Цвет рамки при фокусе */
+	outline: none; /* Убираем стандартный контур */
+}
+
+button {
+	padding: 10px; /* Отступы внутри кнопки */
+	background-color: #007bff; /* Цвет фона кнопки */
+	color: #fff; /* Цвет текста кнопки */
+	border: none; /* Убираем рамку */
+	border-radius: 4px; /* Закругленные углы для кнопки */
+	cursor: pointer; /* Курсор при наведении */
+	font-size: 16px; /* Размер шрифта */
+}
+
+button:hover {
+	background-color: #0056b3; /* Темнее цвет фона при наведении */
+}
+
+p {
+	text-align: center; /* Центрируем текст */
+	color: #666; /* Цвет текста */
+	margin-top: 15px; /* Отступ сверху для параграфа */
+}
+
+#latest-posts {
+	padding: 20px; /* Отступы внутри блока */
+	margin-bottom: 20px; /* Отступ снизу */
+	background: #fff; /* Белый фон для блока */
+	border-radius: 8px; /* Закругленные углы */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для блока */
+}
+
+#latest-posts h2 {
+	color: #333; /* Цвет заголовка */
+	margin-bottom: 15px; /* Отступ снизу для заголовка */
+	font-size: 24px; /* Размер шрифта заголовка */
+}
+
+#latest-posts ul {
+	list-style-type: none; /* Убираем маркеры списка */
+	padding: 0; /* Убираем внутренние отступы */
+}
+
+#latest-posts li {
+	margin-bottom: 15px; /* Отступ снизу для каждого элемента списка */
+	padding: 10px; /* Отступы внутри элемента списка */
+	border: 1px solid #ddd; /* Рамка вокруг элемента списка */
+	border-radius: 5px; /* Закругленные углы для элемента списка */
+	transition: background-color 0.3s; /* Плавный переход для фона */
+	text-align: center; /* Центрируем текст внутри элемента списка */
+}
+
+#latest-posts li:hover {
+	background-color: #f0f0f0; /* Изменение фона при наведении */
+}
+
+#latest-posts p {
+	margin: 0; /* Убираем отступы для параграфа */
+	color: #555; /* Цвет текста */
+}
+
+.read-more {
+	display: inline-block; /* Делаем ссылку блочным элементом */
+	margin-top: 8px; /* Отступ сверху для ссылки */
+	color: #000; /* Цвет текста ссылки (черный) */
+	text-decoration: none; /* Убираем подчеркивание */
+	font-weight: bold; /* Жирный шрифт */
+	padding: 8px 16px; /* Отступы внутри кнопки */
+	background-color: #007bff; /* Цвет фона кнопки */
+	border-radius: 5px; /* Закругленные углы для кнопки */
+	transition: background-color 0.3s; /* Плавный переход для фона кнопки */
+}
+
+.read-more:hover {
+	background-color: #0056b3; /* Темнее цвет фона при наведении */
+	text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Личный сайт о путешествиях">
+   <title>Путешествуем вместе</title>
+   <link rel="stylesheet" href="styles.css">
+   <style>
+      /* Стили для кнопки "Наверх" */
+      #back-to-top {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         background-color: #007bff;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         padding: 10px 15px;
+         cursor: pointer;
+         display: none; /* Скрыть кнопку по умолчанию */
+         z-index: 1000;
+      }
+      #back-to-top:hover {
+         background-color: #0056b3;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>Добро пожаловать на мой сайт!</h1>
+      <nav>
+         <ul>
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#blog">Блог</a></li>
+            <li><a href="#tips">Советы</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contact">Контакты</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <section id="home">
+         <h2>Добро пожаловать на мой сайт!</h2>
+         <p>Привет, я Франциск, и я рад приветствовать вас на моем личном сайте. Я путешественник, фотограф и блогер, и я создал этот сайт, чтобы поделиться своими приключениями и опытом с вами.</p>
+         <img src="./pictures/profile.png" alt="Моя фотография">
+      </section>
+      
+      <section id="latest-posts">
+         <h2>Последние статьи</h2>
+         <ul>
+            <li>
+               <p>Моя поездка в Париж</p>
+               <a class="read-more" href="blog/post1.html">Читать больше</a>
+            </li>
+            <li>
+               <p>Мои любимые места в Риме</p>
+               <a class="read-more" href="blog/post2.html">Читать больше</a>
+            </li>
+            <li>
+               <p>Моя поездка в Барселону</p>
+               <a class="read-more" href="blog/post3.html">Читать больше</a>
+            </li>
+         </ul>
+      </section>
+      
+      <section id="goals">
+         <h2>Цели моего сайта</h2>
+         <p>Моя цель - поделиться своими приключениями и опытом с вами, чтобы вдохновить вас на путешествия и открытия новых мест.</p>
+         <p>Я также хочу создать сообщество путешественников, где мы можем делиться своими историями и советами.</p>
+      </section>
+
+      <section id="about">
+         <h2>Обо мне</h2>
+         <p>Меня зовут Франциск, и я путешественник и фотограф. С раннего возраста я мечтал о путешествиях и открытии новых мест. Я посетил более 15 стран и каждое из них оставило незабываемые впечатления.</p>
+         <p>Моя страсть к путешествиям началась, когда я в 18 лет я отправился в свое первое самостоятельное путешествие в Европу. С тех пор я не останавливаюсь на достигнутом и всегда ищу новые приключения.</p>
+      </section>
+      
+      <section id="interests">
+         <h2>Мои интересы в путешествиях</h2>
+         <p>Я люблю исследовать новые культуры, пробовать местную кухню и знакомиться с новыми людьми. Мои любимые виды путешествий включают:</p>
+         <ul>
+            <li>Пешеходные походы в горах</li>
+            <li>Путешествия на байдарках и каяках</li>
+            <li>Культурные поездки и экскурсии</li>
+            <li>Фотографические экспедиции</li>
+         </ul>
+         <p>Я также увлекаюсь историей и шахматами.</p>
+      </section>
+      
+      <section id="tips">
+         <h2>Советы для путешественников</h2>
+         <div class="tip-category">
+            <h3>Полезные советы по подготовке к поездке</h3>
+            <ul>
+               <li><strong>Исследование места назначения:</strong> Узнайте о культуре и обычаях.</li>
+               <li><strong>Создание списка вещей:</strong> Не забудьте важные вещи.</li>
+               <li><strong>Проверка погоды:</strong> Узнайте о погодных условиях.</li>
+               <li><strong>Бронирование жилья и транспорта:</strong> Делайте это заранее.</li>
+               <li><strong>Проверка документов:</strong> Убедитесь, что все документы в порядке.</li>
+            </ul>
+         </div>
+         <div class="tip-category">
+            <h3>Информация о визах, страховках и т.д.</h3>
+            <ul>
+               <li><strong>Визы:</strong> Узнайте о требованиях для въезда.</li>
+               <li><strong>Медицинская страховка:</strong> Оформите страховку на время поездки.</li>
+               <li><strong>Страховка от отмены поездки:</strong> Рассмотрите возможность оформления.</li>
+               <li><strong>Иммунизация и прививки:</strong> Убедитесь, что все прививки сделаны.</li>
+               <li><strong>Контакты посольства:</strong> Запишите контактные данные посольства.</li>
+            </ul>
+         </div>
+         <div class="tip-category">
+            <h3>Советы по бюджету и экономии</h3>
+            <ul>
+               <li><strong>Составление бюджета:</strong> Определите, сколько готовы потратить.</li>
+               <li><strong>Поиск выгодных предложений:</strong> Используйте сайты для сравнения цен.</li>
+               <li><strong>Путешествие вне сезона:</strong> Рассмотрите возможность поездки в межсезонье.</li>
+               <li><strong>Пользуйтесь общественным транспортом:</strong> Экономьте деньги и изучайте культуру.</li>
+               <li><strong>Пробуйте местную еду:</strong> Уличная еда часто дешевле и вкуснее.</li>
+               <li><strong>Бесплатные мероприятия:</strong> Ищите бесплатные экскурсии и достопримечательности.</li>
+            </ul>
+         </div>
+      </section>
+
+      <section id="gallery">
+         <h2>Галерея путешествий</h2>
+         <p>Исследуйте мир через мои фотографии. Здесь вы найдете моменты из наших путешествий, которые вдохновят вас на новые приключения!</p>
+         <div class="gallery-grid">
+            <figure>
+               <img src="./pictures/pc1.jpg" alt="Описание фотографии 1">
+               <figcaption>Горы в Альпах. Восхитительный вид на рассвете.</figcaption>
+            </figure>
+            <figure>
+               <img src="./pictures/pc2.jpg" alt="Описание фотографии 2">
+               <figcaption>Пляж на Бали. Идеальное место для отдыха.</figcaption>
+            </figure>
+            <figure>
+               <img src="./pictures/pc3.jpg" alt="Описание фотографии 3">
+               <figcaption>Исторические улицы Рима. Прогулка по древнему городу.</figcaption>
+            </figure>
+         </div>
+      </section>
+
+      <section id="contact">
+         <h2>Контакты</h2>
+         <form>
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+         </form>
+         <p>Подписка на рассылку.</p>
+      </section>
+
+      <!-- Кнопка "Наверх" -->
+      <button id="back-to-top">Наверх</button>
+   </main>
+
+   <footer>
+      <p>&copy; 2024 Путешествуем вместе</p>
+      <div>
+         <a href="https://facebook.com">Facebook</a>
+         <a href="https://vk.com/">VK</a>
+         <a href="https://ok.ru/">OK</a>
+      </div>
+   </footer>
+
+   <script>
+      window.onscroll = function() {
+         const button = document.getElementById('back-to-top');
+         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+         } else {
+            button.style.display = "none";
+         }
+      };
+
+      document.getElementById('back-to-top').onclick = function() {
+         window.scrollTo({top: 0, behavior: 'smooth'});
+      };
+   </script>
+</body>
+</html>
