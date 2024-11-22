@@ -32,12 +32,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #e0e0e0; /* Цвет текста при наведении */
+	color: #e0e0e0; 
 }
 
 main {
-	margin: 20px auto; /* Центрирование основного контента */
-	max-width: 800px; /* Ограничение ширины */
+	margin: 20px auto; 
+	max-width: 800px; 
 }
 
 section {
@@ -50,8 +50,8 @@ section {
 
 h2 {
 	color: #333;
-	text-align: center; /* Выравнивание заголовка по центру */
-	margin-bottom: 15px; /* Отступ снизу */
+	text-align: center; 
+	margin-bottom: 15px; 
 }
 
 
@@ -78,38 +78,38 @@ h2 {
 }
 
 .gallery-grid {
-	display: flex; /* Используем Flexbox */
-	flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-	gap: 15px; /* Промежуток между элементами */
-	justify-content: center; /* Центрируем элементы по горизонтали */
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 15px; 
+	justify-content: center; 
 }
 
 figure {
-	margin: 0; /* Убирает отступы у figure */
-	overflow: hidden; /* Скрывает части изображения, выходящие за границы */
-	border-radius: 8px; /* Закругляет углы */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавляет тень */
-	transition: transform 0.3s; /* Плавный переход при наведении */
-	flex: 0 1 calc(25% - 15px); /* Задает ширину фигуры */
-	max-width: 250px; /* Максимальная ширина для фигуры */
+	margin: 0; 
+	overflow: hidden; 
+	border-radius: 8px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+	transition: transform 0.3s; 
+	flex: 0 1 calc(25% - 15px); 
+	max-width: 250px; 
 }
 
 figure:hover {
-	transform: scale(1.05); /* Увеличивает фигуру при наведении */
+	transform: scale(1.05); 
 }
 
 figure img {
-	width: 100%; /* Ширина 100% для адаптации к контейнеру */
-	height: 150px; /* Фиксированная высота для всех изображений */
-	object-fit: cover; /* Обрезает изображения, чтобы они соответствовали размеру */
-	border-radius: 8px 8px 0 0; /* Закругляет верхние углы изображения */
+	width: 100%; 
+	height: 150px; 
+	object-fit: cover; 
+	border-radius: 8px 8px 0 0;
 }
 
 figcaption {
 	padding: 10px;
-	text-align: center; /* Центрирует текст в подписях */
-	background: #f9f9f9; /* Цвет фона для подписях */
-	border-radius: 0 0 8px 8px; /* Закругляет нижние углы */
+	text-align: center; 
+	background: #f9f9f9; 
+	border-radius: 0 0 8px 8px; 
 	color: #333;
 }
 
@@ -131,131 +131,133 @@ footer a {
 }
 
 .read-more {
-	display: inline-block; /* Делает ссылку блочным элементом */
-	padding: 10px 20px; /* Отступы для кнопки */
-	margin-top: 10px; /* Отступ сверху */
-	background-color: #28a745; /* Цвет фона кнопки */
-	color: #fff; /* Цвет текста */
-	text-decoration: none; /* Убирает подчеркивание */
-	border-radius: 5px; /* Закругляет углы */
-	transition: background-color 0.3s, transform 0.3s; /* Плавный переход цвета фона и эффекта */
-	text-align: center; /* Центрирует текст в кнопке */
+	display: inline-block; 
+	padding: 10px 20px; 
+	margin-top: 10px; 
+	background-color: #28a745; 
+	color: #fff; 
+	text-decoration: none; 
+	border-radius: 5px; 
+	transition: background-color 0.3s, transform 0.3s; 
+	text-align: center; 
 }
 
 .read-more:hover {
-	background-color: #218838; /* Темный цвет фона при наведении */
-	transform: scale(1.05); /* Увеличивает кнопку при наведении */
+	background-color: #218838; 
+	transform: scale(1.05); 
 }
 
 #contact {
-	background: #f9f9f9; /* Светлый фон для блока */
-	padding: 20px; /* Отступы внутри блока */
-	margin-bottom: 20px; /* Отступ снизу */
-	border-radius: 8px; /* Закругленные углы */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для блока */
+	background: #f9f9f9; 
+	padding: 20px; 
+	margin-bottom: 20px; 
+	border-radius: 8px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 #contact h2 {
-	color: #333; /* Цвет заголовка */
-	text-align: center; /* Центрируем заголовок */
-	margin-bottom: 15px; /* Отступ снизу заголовка */
+	color: #333;
+	text-align: center; 
+	margin-bottom: 15px; 
 }
 
 form {
-	display: flex; /* Используем Flexbox для формы */
-	flex-direction: column; /* Элементы формы располагаются вертикально */
+	display: flex; 
+	flex-direction: column; 
 }
 
 label {
-	margin-bottom: 5px; /* Отступ снизу для меток */
-	color: #555; /* Цвет текста меток */
+	margin-bottom: 5px; 
+	color: #555; 
 }
 
 input, textarea {
-	padding: 10px; /* Отступы внутри полей ввода */
-	margin-bottom: 15px; /* Отступ снизу для полей ввода */
-	border: 1px solid #ccc; /* Рамка для полей ввода */
-	border-radius: 4px; /* Закругленные углы для полей ввода */
-	font-size: 16px; /* Размер шрифта */
+	padding: 10px; 
+	margin-bottom: 15px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	font-size: 16px; 
 }
 
 input:focus, textarea:focus {
-	border-color: #007bff; /* Цвет рамки при фокусе */
-	outline: none; /* Убираем стандартный контур */
+	border-color: #007bff; 
+	outline: none; 
 }
 
 button {
-	padding: 10px; /* Отступы внутри кнопки */
-	background-color: #007bff; /* Цвет фона кнопки */
-	color: #fff; /* Цвет текста кнопки */
-	border: none; /* Убираем рамку */
-	border-radius: 4px; /* Закругленные углы для кнопки */
-	cursor: pointer; /* Курсор при наведении */
-	font-size: 16px; /* Размер шрифта */
+	padding: 10px; 
+	background-color: #007bff; 
+	color: #fff; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer; 
+	font-size: 16px;
 }
 
 button:hover {
-	background-color: #0056b3; /* Темнее цвет фона при наведении */
+	background-color: #0056b3; 
 }
 
 p {
-	text-align: center; /* Центрируем текст */
-	color: #666; /* Цвет текста */
-	margin-top: 15px; /* Отступ сверху для параграфа */
+	text-align: center; 
+	color: #666;
+	margin-top: 15px; 
 }
 
 #latest-posts {
-	padding: 20px; /* Отступы внутри блока */
-	margin-bottom: 20px; /* Отступ снизу */
-	background: #fff; /* Белый фон для блока */
-	border-radius: 8px; /* Закругленные углы */
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для блока */
+	padding: 20px;
+	margin-bottom: 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #latest-posts h2 {
-	color: #333; /* Цвет заголовка */
-	margin-bottom: 15px; /* Отступ снизу для заголовка */
-	font-size: 24px; /* Размер шрифта заголовка */
+	color: #333;
+	margin-bottom: 15px;
+	font-size: 24px;
 }
 
 #latest-posts ul {
-	list-style-type: none; /* Убираем маркеры списка */
-	padding: 0; /* Убираем внутренние отступы */
+	list-style-type: none;
+	padding: 0;
 }
 
 #latest-posts li {
-	margin-bottom: 15px; /* Отступ снизу для каждого элемента списка */
-	padding: 10px; /* Отступы внутри элемента списка */
-	border: 1px solid #ddd; /* Рамка вокруг элемента списка */
-	border-radius: 5px; /* Закругленные углы для элемента списка */
-	transition: background-color 0.3s; /* Плавный переход для фона */
-	text-align: center; /* Центрируем текст внутри элемента списка */
+	margin-bottom: 15px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	text-align: center;
 }
 
 #latest-posts li:hover {
-	background-color: #f0f0f0; /* Изменение фона при наведении */
+	background-color: #f0f0f0;
 }
 
 #latest-posts p {
-	margin: 0; /* Убираем отступы для параграфа */
-	color: #555; /* Цвет текста */
+	margin: 0;
+	color: #555;
 }
 
 .read-more {
-	display: inline-block; /* Делаем ссылку блочным элементом */
-	margin-top: 8px; /* Отступ сверху для ссылки */
-	color: #000; /* Цвет текста ссылки (черный) */
-	text-decoration: none; /* Убираем подчеркивание */
-	font-weight: bold; /* Жирный шрифт */
-	padding: 8px 16px; /* Отступы внутри кнопки */
-	background-color: #007bff; /* Цвет фона кнопки */
-	border-radius: 5px; /* Закругленные углы для кнопки */
-	transition: background-color 0.3s; /* Плавный переход для фона кнопки */
+	display: inline-block;
+	margin-top: 8px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 8px 16px;
+	background-color: #007bff;
+	border-radius: 5px;
+	transition: background-color 0.3s;
 }
 
+Найти еще
+
 .read-more:hover {
-	background-color: #0056b3; /* Темнее цвет фона при наведении */
-	text-decoration: none; /* Убираем подчеркивание при наведении */
+	background-color: #0056b3; 
+	text-decoration: none; 
 }
 
 
